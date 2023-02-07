@@ -32,7 +32,7 @@ jobs:
         run: echo 'starter-vue.elonehoo.me' > dist/CNAME
 
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           target_branch: gh-pages
           build_dir: dist

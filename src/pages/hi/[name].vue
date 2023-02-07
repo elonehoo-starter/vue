@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { name } = defineProps<{ name:string }>()
+const { name } = defineProps<{ name: string }>()
 const router = useRouter()
 </script>
 
