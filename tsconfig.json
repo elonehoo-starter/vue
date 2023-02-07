@@ -16,11 +16,13 @@
     "types": [
       "vite/client",
       "unplugin-vue-prop",
+      "vite-plugin-pages/client",
       "vitest/globals"
     ],
     "paths": {
       "~/*": ["src/*"]
     }
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

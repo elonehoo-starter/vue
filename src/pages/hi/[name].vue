@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { name } = defineProps<{ name:string }>()
 const router = useRouter()
 </script>
 
@@ -6,7 +7,7 @@ const router = useRouter()
   <div>
     <div i-carbon-earth-southeast-asia-filled text-4xl inline-block />
     <p>
-      Hi, {{ $route.params.name }}
+      Hi, {{ name }}
     </p>
     <p text-sm op50>
       <em>Dynamic route!</em>

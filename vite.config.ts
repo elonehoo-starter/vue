@@ -6,9 +6,8 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import-api/vite'
 import Props from 'unplugin-vue-prop/vite'
 import SfcName from 'unplugin-vue-sfc-name/vite'
-import VueRouter from 'unplugin-vue-router/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
 import UnoCss from 'unocss/vite'
+import Pages from 'vite-plugin-pages'
 
 export default defineConfig({
   resolve: {
@@ -21,19 +20,16 @@ export default defineConfig({
       reactivityTransform: true,
     }),
 
-    // https://github.com/posva/unplugin-vue-router
-    VueRouter(),
+    // https://github.com/hannoeru/vite-plugin-pages
+    Pages(),
 
     // https://github.com/elonehoo/unplugin-auto-import-api
     AutoImport({
       imports: [
         'vue',
+        'vue-router',
         '@vueuse/core',
         'vitest',
-        VueRouterAutoImports,
-        {
-          'vue-router/auto': ['useLink'],
-        },
       ],
       dts: true,
       dirs: [
