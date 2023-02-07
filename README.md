@@ -1,3 +1,3 @@
-# static
+# starter-vue
 
-Host for static files
+Starter template for Vue

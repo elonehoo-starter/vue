@@ -1,0 +1,35 @@
+{
+  "private": "true",
+  "version": "0.0.0",
+  "description": "Starter template for Vue",
+  "scripts": {
+    "dev": "vite --port 3333",
+    "build": "vite build",
+    "preview": "vite preview --port 8766",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "dependencies": {
+    "@unocss/reset": "^0.49.4",
+    "@vueuse/core": "^9.12.0",
+    "unocss": "^0.49.4",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.1",
+    "@iconify-json/carbon": "^1.1.14",
+    "@types/node": "^18.13.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.33.0",
+    "typescript": "^4.9.5",
+    "unplugin-auto-import-api": "^0.0.1",
+    "unplugin-vue-components": "^0.23.0",
+    "unplugin-vue-prop": "^0.0.4",
+    "unplugin-vue-router": "^0.3.2",
+    "unplugin-vue-sfc-name": "^0.0.5",
+    "vite": "^4.1.1"
+  }
+}
