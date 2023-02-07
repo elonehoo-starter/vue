@@ -22,10 +22,7 @@ export default defineConfig({
     }),
 
     // https://github.com/posva/unplugin-vue-router
-    VueRouter({
-      dataFetching: true,
-      logs: true,
-    }),
+    VueRouter(),
 
     // https://github.com/elonehoo/unplugin-auto-import-api
     AutoImport({
