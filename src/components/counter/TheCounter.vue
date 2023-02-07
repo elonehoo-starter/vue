@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="TheCounter">
 import { Counter } from '~/components/counter/prop'
 const props = defineProps<Counter>()
 

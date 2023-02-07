@@ -12,6 +12,8 @@ const router = useRouter()
       <em>Dynamic route!</em>
     </p>
 
+    <TheCounter :initial="1"/>
+
     <div>
       <button
         class="btn m-3 text-sm mt-8"

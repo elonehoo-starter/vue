@@ -1,3 +1,6 @@
+<script setup lang="ts" name="TheFooter">
+</script>
+
 <template>
   <nav text-xl mt-6 inline-flex gap-2>
     <button icon-btn @click="toggleDark()">
