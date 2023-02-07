@@ -15,7 +15,8 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
-      "unplugin-vue-prop"
+      "unplugin-vue-prop",
+      "vitest/globals"
     ],
     "paths": {
       "~/*": ["src/*"]

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const name = ref('')
 
 const router = useRouter()

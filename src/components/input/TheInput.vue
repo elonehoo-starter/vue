@@ -1,14 +1,22 @@
 <script setup lang="ts" name="TheInput">
-import { Input } from '~/components/input/prop'
+import type { Input } from '~/components/input/prop'
 const { modelValue } = defineProps<Input>()
 const emit = defineEmits(['update:modelValue'])
+
+const value = computed({
+  get() {
+    return modelValue
+  },
+  set(value) {
+    emit('update:modelValue', value)
+  }
+})
 </script>
 
 <template>
   <input
     id="input"
-    :value="modelValue"
-    @input="emit('update:modelValue', $event.target!.value)"
+    v-model="value"
     type="text"
     v-bind="$attrs"
     p="x-4 y-2"

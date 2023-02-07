@@ -1,3 +1,3 @@
-export interface Input{
-  modelValue:string
+export interface Input {
+  modelValue: string
 }

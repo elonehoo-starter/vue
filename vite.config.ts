@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
@@ -21,16 +22,20 @@ export default defineConfig({
     }),
 
     // https://github.com/posva/unplugin-vue-router
-    VueRouter(),
+    VueRouter({
+      dataFetching: true,
+      logs: true,
+    }),
 
     // https://github.com/elonehoo/unplugin-auto-import-api
     AutoImport({
       imports: [
         'vue',
         '@vueuse/core',
+        'vitest',
         VueRouterAutoImports,
         {
-          'vue-router/auto': ['useLink']
+          'vue-router/auto': ['useLink'],
         },
       ],
       dts: true,
@@ -53,6 +58,10 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    UnoCss()
+    UnoCss(),
   ],
+  test: {
+    environment: 'happy-dom',
+    globals: true,
+  },
 })
