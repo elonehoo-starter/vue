@@ -9,7 +9,7 @@ const value = computed({
   },
   set(value) {
     emit('update:modelValue', value)
-  }
+  },
 })
 </script>
 
