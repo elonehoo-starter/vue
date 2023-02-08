@@ -7,13 +7,13 @@ const { count, inc, dec } = useCounter(props.initial)
 
 <template>
   <div inline-flex m="y-3">
-    <button btn p-2 rounded-full @click="dec()">
+    <button class="dec" btn p-2 rounded-full @click="dec()">
       <div i-carbon-subtract />
     </button>
     <div font="mono" w="15" m-auto inline-block>
       {{ count }}
     </div>
-    <button btn p-2 rounded-full @click="inc()">
+    <button class="inc" btn p-2 rounded-full @click="inc()">
       <div i-carbon-add />
     </button>
   </div>
