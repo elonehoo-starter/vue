@@ -6,13 +6,15 @@ const { count, inc, dec } = useCounter(props.initial)
 </script>
 
 <template>
-  <div>
-    {{ count }}
-    <button class="inc" @click="inc()">
-      +
+  <div inline-flex m="y-3">
+    <button btn p-2 rounded-full @click="dec()">
+      <div i-carbon-subtract />
     </button>
-    <button class="dec" @click="dec()">
-      -
+    <div font="mono" w="15" m-auto inline-block>
+      {{ count }}
+    </div>
+    <button btn p-2 rounded-full @click="inc()">
+      <div i-carbon-add />
     </button>
   </div>
 </template>
