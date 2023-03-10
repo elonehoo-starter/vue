@@ -3,7 +3,7 @@ import type { Input } from '~/components/input/prop'
 const { modelValue } = defineProps<Input>()
 const emit = defineEmits(['update:modelValue'])
 
-const value = computed({
+const name = computed({
   get() {
     return modelValue
   },
@@ -16,7 +16,7 @@ const value = computed({
 <template>
   <input
     id="input"
-    v-model="value"
+    v-model="name"
     type="text"
     v-bind="$attrs"
     p="x-4 y-2"

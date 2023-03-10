@@ -3,7 +3,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import-api/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import Props from 'unplugin-vue-prop'
 import SfcName from 'unplugin-vue-sfc-name/vite'
 import UnoCss from 'unocss/vite'
@@ -16,9 +16,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    Vue({
-      reactivityTransform: true,
-    }),
+    Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
