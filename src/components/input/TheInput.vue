@@ -1,5 +1,6 @@
 <script setup lang="ts" name="TheInput">
 import type { Input } from '~/components/input/prop'
+
 const { modelValue } = defineProps<Input>()
 const emit = defineEmits(['update:modelValue'])
 

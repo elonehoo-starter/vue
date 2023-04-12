@@ -1,5 +1,6 @@
 <script setup lang="ts" name="TheCounter">
 import type { Counter } from '~/components/counter/prop'
+
 const props = defineProps<Counter>()
 
 const { count, inc, dec } = useCounter(props.initial)
