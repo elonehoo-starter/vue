@@ -8,6 +8,7 @@ import Props from 'unplugin-vue-prop/vite'
 import SfcName from 'unplugin-vue-sfc-name/vite'
 import UnoCss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
+import Inspector from 'vite-inspector'
 
 export default defineConfig({
   resolve: {
@@ -16,6 +17,9 @@ export default defineConfig({
     },
   },
   plugins: [
+    Inspector({
+      framework:'vue'
+    }),
     Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages

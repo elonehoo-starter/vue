@@ -4,20 +4,13 @@ import type { Input } from '~/components/input/prop'
 const { modelValue } = defineProps<Input>()
 const emit = defineEmits(['update:modelValue'])
 
-const name = computed({
-  get() {
-    return modelValue
-  },
-  set(value) {
-    emit('update:modelValue', value)
-  },
-})
 </script>
 
 <template>
   <input
     id="input"
-    v-model="name"
+    :value="modelValue"
+    @input="emit('update:modelValue', $event.target.value)"
     type="text"
     v-bind="$attrs"
     p="x-4 y-2"
