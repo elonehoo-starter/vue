@@ -18,7 +18,7 @@ export default defineConfig({
   },
   plugins: [
     Inspector({
-      framework:'vue'
+      framework: 'vue',
     }),
     Vue(),
 
