@@ -52,8 +52,8 @@ devDependencies:
     specifier: ^5.0.4
     version: 5.0.4
   unplugin-auto-import:
-    specifier: ^0.15.3
-    version: 0.15.3(@vueuse/core@10.1.2)(rollup@3.21.8)
+    specifier: ^0.16.0
+    version: 0.16.0(@vueuse/core@10.1.2)(rollup@3.21.8)
   unplugin-vue-components:
     specifier: ^0.24.1
     version: 0.24.1(rollup@3.21.8)(vue@3.3.2)
@@ -64,8 +64,8 @@ devDependencies:
     specifier: ^0.0.11
     version: 0.0.11
   vite-plugin-alias:
-    specifier: ^0.0.7
-    version: 0.0.7(@types/node@20.1.5)(eslint@8.40.0)(typescript@5.0.4)
+    specifier: ^0.0.8
+    version: 0.0.8(@types/node@20.1.5)(eslint@8.40.0)(typescript@5.0.4)
   vite-plugin-pages:
     specifier: ^0.29.0
     version: 0.29.0(vite@4.3.6)
@@ -4559,8 +4559,8 @@ packages:
       - vite
     dev: false
 
-  /unplugin-auto-import@0.15.3(@vueuse/core@10.1.2)(rollup@3.21.8):
-    resolution: {integrity: sha512-RLT8SqbPn4bT7yBshZId0uPSofKWnwr66RyDaxWaFb/+f7OTDOWAsVNz+hOQLBWSjvbekr2xZY9ccS8TDHJbCQ==}
+  /unplugin-auto-import@0.16.0(@vueuse/core@10.1.2)(rollup@3.21.8):
+    resolution: {integrity: sha512-AbeGl3kzoGyqh2uWwwSVYCXy2ouvSbHfBc2u7xmNBpOosWa7SIAz+nQx3f1JpMXunEZ9TTChXkor4WcGrpkc7Q==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': ^3.2.2
@@ -4702,8 +4702,8 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-alias@0.0.7(@types/node@20.1.5)(eslint@8.40.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-EAMu//V3Fud529NtAKQ1YXIKTn78iB7GXqJix6LZFGt38p9E9BdTqSCqTra5+qqJLBHSE7ETn/AF6wCfkgcbRg==}
+  /vite-plugin-alias@0.0.8(@types/node@20.1.5)(eslint@8.40.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-PHH9NQBelpvS1V/vkZrBAF3TB+bUr1s76X/FvmaWr2A1mE2+LXsfGSMwUDWVMrJsAG6EjPg1nNDht54Sp54z8w==}
     dependencies:
       '@antfu/eslint-config': 0.38.6(eslint@8.40.0)(typescript@5.0.4)
       chokidar: 3.5.3
@@ -4711,7 +4711,7 @@ packages:
       consola: 3.1.0
       fast-glob: 3.2.12
       unbuild: 1.2.1
-      vite: 4.2.1(@types/node@20.1.5)
+      vite: 4.3.6(@types/node@20.1.5)
     transitivePeerDependencies:
       - '@types/node'
       - eslint
@@ -4748,40 +4748,6 @@ packages:
       yaml: 2.2.2
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /vite@4.2.1(@types/node@20.1.5):
-    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      '@types/node': 20.1.5
-      esbuild: 0.17.19
-      postcss: 8.4.23
-      resolve: 1.22.2
-      rollup: 3.21.8
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /vite@4.3.6(@types/node@20.1.5):
