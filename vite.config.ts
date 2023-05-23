@@ -1,5 +1,4 @@
 /// <reference types="vitest" />
-import path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
@@ -8,12 +7,18 @@ import UnoCss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import Inspector from 'vite-inspector'
 import Alias from 'vite-plugin-alias'
+import PKG from 'vite-plugin-package-configs'
+import AutoEnv from 'vite-plugin-auto-env'
+import Chai from 'vite-plugin-chai'
 
 export default defineConfig({
   plugins: [
+    // https://github.com/vite-inspector/vite-inspector
     Inspector({
       framework: 'vue',
     }),
+
+    // https://github.com/vitejs/vite-plugin-vue
     Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -25,6 +30,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         '@vueuse/core',
+        '@vueuse/head',
         'vitest',
       ],
       dts: true,
@@ -48,9 +54,14 @@ export default defineConfig({
       useConfig: true,
       useTypescript: true,
     }),
-  ],
-  test: {
-    environment: 'happy-dom',
-    globals: true,
-  },
+
+    // https://github.com/elonehoo/vite-plugin-package-configs
+    PKG(),
+
+    // https://github.com/wip-elonehoo/vite-plugin-chai
+    Chai(),
+
+    // https://github.com/wip-elonehoo/vite-plugin-auto-env
+    AutoEnv()
+  ]
 })
