@@ -62,6 +62,6 @@ export default defineConfig({
     Chai(),
 
     // https://github.com/wip-elonehoo/vite-plugin-auto-env
-    AutoEnv()
-  ]
+    AutoEnv(),
+  ],
 })
