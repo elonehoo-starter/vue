@@ -66,6 +66,6 @@ export default defineConfig({
     AutoEnv(),
 
     // https://github.com/wip-elonehoo/vite-plugin-classify
-    Classify()
+    Classify(),
   ],
 })
