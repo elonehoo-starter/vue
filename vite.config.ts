@@ -10,6 +10,7 @@ import Alias from 'vite-plugin-alias'
 import PKG from 'vite-plugin-package-configs'
 import AutoEnv from 'vite-plugin-auto-env'
 import Chai from 'vite-plugin-chai'
+import Classify from 'vite-plugin-classify'
 
 export default defineConfig({
   plugins: [
@@ -63,5 +64,8 @@ export default defineConfig({
 
     // https://github.com/wip-elonehoo/vite-plugin-auto-env
     AutoEnv(),
+
+    // https://github.com/wip-elonehoo/vite-plugin-classify
+    Classify()
   ],
 })
