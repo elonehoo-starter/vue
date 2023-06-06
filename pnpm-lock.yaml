@@ -82,6 +82,9 @@ devDependencies:
   vite-plugin-classify:
     specifier: ^0.0.1
     version: 0.0.1
+  vite-plugin-deploy-info:
+    specifier: ^0.0.1
+    version: 0.0.1
   vite-plugin-package-configs:
     specifier: ^0.0.10
     version: 0.0.10
@@ -5061,6 +5064,13 @@ packages:
     engines: {node: '>=v14.21.3'}
     dependencies:
       read-pkg-up: 9.1.0
+    dev: true
+
+  /vite-plugin-deploy-info@0.0.1:
+    resolution: {integrity: sha512-NY8QrsbhnTBAVanZ/y5DLRj5flJ1zPfJXFvLDVt2utJEF4loezcQpo5xaHRrP0Iih10IVrosY2C3yVxBr01Agg==}
+    engines: {node: '>=v14.21.3'}
+    dependencies:
+      kolorist: 1.8.0
     dev: true
 
   /vite-plugin-package-configs@0.0.10:

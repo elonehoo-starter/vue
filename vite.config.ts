@@ -11,6 +11,7 @@ import PKG from 'vite-plugin-package-configs'
 import AutoEnv from 'vite-plugin-auto-env'
 import Chai from 'vite-plugin-chai'
 import Classify from 'vite-plugin-classify'
+import DeployInfo from 'vite-plugin-deploy-info'
 
 export default defineConfig({
   plugins: [
@@ -67,5 +68,39 @@ export default defineConfig({
 
     // https://github.com/wip-elonehoo/vite-plugin-classify
     Classify(),
+
+    // https://github.com/wip-elonehoo/vite-plugin-deploy-info
+    DeployInfo({
+      info:[
+        {
+          name: 'Vue Docs',
+          message: 'https://vuejs.org'
+        },
+        {
+          name: 'Vite Docs',
+          message: 'https://vitejs.dev'
+        },
+        {
+          name: 'pinia Docs',
+          message: 'https://pinia.vuejs.org'
+        },
+        {
+          name: 'Router Docs',
+          message: 'https://router.vuejs.org'
+        },
+        {
+          name: 'VueUse Docs',
+          message: 'https://vueuse.org'
+        },
+        {
+          name: 'Unocss Docs',
+          message: 'https://unocss.dev/interactive'
+        },
+        {
+          name: 'Vitest Docs',
+          message: 'https://vitest.dev',
+        },
+      ]
+    })
   ],
 })

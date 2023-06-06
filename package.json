@@ -54,6 +54,7 @@
     "vite-plugin-auto-env": "^0.0.2",
     "vite-plugin-chai": "^0.0.2",
     "vite-plugin-classify": "^0.0.1",
+    "vite-plugin-deploy-info": "^0.0.1",
     "vite-plugin-package-configs": "^0.0.10",
     "vite-plugin-pages": "^0.31.0",
     "vitest": "^0.31.4",
