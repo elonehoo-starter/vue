@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -61,6 +61,9 @@ devDependencies:
   unplugin-auto-import:
     specifier: ^0.16.6
     version: 0.16.6(@vueuse/core@10.2.1)(rollup@3.26.0)
+  unplugin-deploy-info:
+    specifier: ^0.0.1
+    version: 0.0.1
   unplugin-vue-components:
     specifier: ^0.25.1
     version: 0.25.1(rollup@3.26.0)(vue@3.3.4)
@@ -80,9 +83,6 @@ devDependencies:
     specifier: ^0.0.2
     version: 0.0.2(vite@4.3.9)
   vite-plugin-classify:
-    specifier: ^0.0.1
-    version: 0.0.1
-  vite-plugin-deploy-info:
     specifier: ^0.0.1
     version: 0.0.1
   vite-plugin-package-configs:
@@ -4656,6 +4656,13 @@ packages:
       - rollup
     dev: true
 
+  /unplugin-deploy-info@0.0.1:
+    resolution: {integrity: sha512-TIXJIATI0CgcSsURpkBr75B5rpb9gdi5emfSqd+yai8m5rSl86c0277fV94LUDiXEYn9k/T9nmy9WOJDlmoBmA==}
+    dependencies:
+      kolorist: 1.8.0
+      unplugin: 1.3.2
+    dev: true
+
   /unplugin-vue-components@0.25.1(rollup@3.26.0)(vue@3.3.4):
     resolution: {integrity: sha512-kzS2ZHVMaGU2XEO2keYQcMjNZkanDSGDdY96uQT9EPe+wqSZwwgbFfKVJ5ti0+8rGAcKHColwKUvctBhq2LJ3A==}
     engines: {node: '>=14'}
@@ -4830,13 +4837,6 @@ packages:
     engines: {node: '>=v14.21.3'}
     dependencies:
       read-pkg-up: 9.1.0
-    dev: true
-
-  /vite-plugin-deploy-info@0.0.1:
-    resolution: {integrity: sha512-NY8QrsbhnTBAVanZ/y5DLRj5flJ1zPfJXFvLDVt2utJEF4loezcQpo5xaHRrP0Iih10IVrosY2C3yVxBr01Agg==}
-    engines: {node: '>=v14.21.3'}
-    dependencies:
-      kolorist: 1.8.0
     dev: true
 
   /vite-plugin-package-configs@0.0.11:

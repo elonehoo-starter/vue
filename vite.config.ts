@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import DeployInfo from 'unplugin-deploy-info/vite'
 import UnoCss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import Inspector from 'vite-inspector'
@@ -11,7 +12,6 @@ import PKG from 'vite-plugin-package-configs'
 import AutoEnv from 'vite-plugin-auto-env'
 import Chai from 'vite-plugin-chai'
 import Classify from 'vite-plugin-classify'
-import DeployInfo from 'vite-plugin-deploy-info'
 
 export default defineConfig({
   plugins: [
@@ -69,7 +69,7 @@ export default defineConfig({
     // https://github.com/wip-elonehoo/vite-plugin-classify
     Classify(),
 
-    // https://github.com/wip-elonehoo/vite-plugin-deploy-info
+    // https://github.com/elonehoo/unplugin-deploy-info
     DeployInfo({
       info:[
         {
