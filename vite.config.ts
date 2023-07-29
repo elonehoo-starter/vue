@@ -12,6 +12,7 @@ import PKG from 'vite-plugin-package-configs'
 import AutoEnv from 'vite-plugin-auto-env'
 import Chai from 'vite-plugin-chai'
 import Classify from 'vite-plugin-classify'
+import TerminalLog from 'vite-plugin-terminal-log'
 
 export default defineConfig({
   plugins: [
@@ -19,6 +20,9 @@ export default defineConfig({
     Inspector({
       framework: 'vue',
     }),
+
+    // https://github.com/elonehoo/vite-plugin-terminal-log
+    TerminalLog(),
 
     // https://github.com/vitejs/vite-plugin-vue
     Vue(),
