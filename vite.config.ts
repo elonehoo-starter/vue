@@ -13,6 +13,7 @@ import AutoEnv from 'vite-plugin-auto-env'
 import Chai from 'vite-plugin-chai'
 import Classify from 'vite-plugin-classify'
 import TerminalLog from 'vite-plugin-terminal-log'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 export default defineConfig({
   plugins: [
@@ -36,8 +37,8 @@ export default defineConfig({
         'vue',
         'vue-router',
         '@vueuse/core',
-        '@vueuse/head',
         'vitest',
+        unheadVueComposablesImports
       ],
       dts: true,
       dirs: [

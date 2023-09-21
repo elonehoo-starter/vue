@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import { createHead } from '@vueuse/head'
+import { createHead } from '@unhead/vue'
 import routes from 'virtual:generated-pages'
 import App from './App.vue'
 import '@unocss/reset/tailwind.css'
