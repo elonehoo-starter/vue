@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^8.49.0
     version: 8.49.0
   happy-dom:
-    specifier: ^10.11.2
-    version: 10.11.2
+    specifier: ^12.1.5
+    version: 12.1.5
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -96,7 +96,7 @@ devDependencies:
     version: 0.0.1
   vitest:
     specifier: ^0.34.4
-    version: 0.34.4(@vitest/ui@0.34.4)(happy-dom@10.11.2)
+    version: 0.34.4(@vitest/ui@0.34.4)(happy-dom@12.1.5)
   vue-tsc:
     specifier: ^1.8.11
     version: 1.8.11(typescript@5.2.2)
@@ -1781,7 +1781,7 @@ packages:
       magic-string: 0.30.2
       picocolors: 1.0.0
       std-env: 3.3.3
-      vitest: 0.34.4(@vitest/ui@0.34.4)(happy-dom@10.11.2)
+      vitest: 0.34.4(@vitest/ui@0.34.4)(happy-dom@12.1.5)
     dev: true
 
   /@vitest/expect@0.34.4:
@@ -1826,7 +1826,7 @@ packages:
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 0.34.4(@vitest/ui@0.34.4)(happy-dom@10.11.2)
+      vitest: 0.34.4(@vitest/ui@0.34.4)(happy-dom@12.1.5)
     dev: true
 
   /@vitest/utils@0.34.4:
@@ -3532,8 +3532,8 @@ packages:
       duplexer: 0.1.2
     dev: false
 
-  /happy-dom@10.11.2:
-    resolution: {integrity: sha512-rzgmLjLkhyaOdFEyU8CWXzbgyCyM7wJHLqhaoeEVSTyur1fjcUaiNTHx+D4CPaLvx16tGy+SBPd9TVnP/kzL3w==}
+  /happy-dom@12.1.5:
+    resolution: {integrity: sha512-JpeqFplyl4QymbIzMlbFyPmBgVuQsplHi98GX0s2Kmks0d946KgPtsHgqbkP+Tu1vNYAIrppIPOiCQgNY8CT+Q==}
     dependencies:
       css.escape: 1.5.1
       entities: 4.5.0
@@ -5445,7 +5445,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitest@0.34.4(@vitest/ui@0.34.4)(happy-dom@10.11.2):
+  /vitest@0.34.4(@vitest/ui@0.34.4)(happy-dom@12.1.5):
     resolution: {integrity: sha512-SE/laOsB6995QlbSE6BtkpXDeVNLJc1u2LHRG/OpnN4RsRzM3GQm4nm3PQCK5OBtrsUqnhzLdnT7se3aeNGdlw==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5490,7 +5490,7 @@ packages:
       cac: 6.7.14
       chai: 4.3.7
       debug: 4.3.4
-      happy-dom: 10.11.2
+      happy-dom: 12.1.5
       local-pkg: 0.4.3
       magic-string: 0.30.3
       pathe: 1.1.1
