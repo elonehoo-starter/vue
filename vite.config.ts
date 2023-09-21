@@ -38,7 +38,7 @@ export default defineConfig({
         'vue-router',
         '@vueuse/core',
         'vitest',
-        unheadVueComposablesImports
+        unheadVueComposablesImports,
       ],
       dts: true,
       dirs: [
