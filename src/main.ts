@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router/auto'
 import { createHead } from '@unhead/vue'
-import routes from 'virtual:generated-pages'
 import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
@@ -11,7 +10,6 @@ const head = createHead()
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
 })
 
 const app = createApp(App)

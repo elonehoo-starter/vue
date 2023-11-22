@@ -28,7 +28,6 @@
         },
         "types": [
             "vite/client",
-            "vite-plugin-pages/client",
             "vitest/globals"
         ],
         "resolveJsonModule": true,

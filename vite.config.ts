@@ -5,7 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import DeployInfo from 'unplugin-deploy-info/vite'
 import UnoCss from 'unocss/vite'
-import Pages from 'vite-plugin-pages'
+import VueRouter from 'unplugin-vue-router/vite'
 import Inspector from 'vite-inspector'
 import Alias from 'vite-plugin-alias'
 import PKG from 'vite-plugin-package-configs'
@@ -13,6 +13,7 @@ import AutoEnv from 'vite-plugin-auto-env'
 import Chai from 'vite-plugin-chai'
 import Classify from 'vite-plugin-classify'
 import TerminalLog from 'vite-plugin-terminal-log'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 export default defineConfig({
@@ -21,15 +22,14 @@ export default defineConfig({
     Inspector({
       framework: 'vue',
     }),
+    // https://github.com/posva/unplugin-vue-router
+    VueRouter(),
 
     // https://github.com/elonehoo/vite-plugin-terminal-log
     TerminalLog(),
 
     // https://github.com/vitejs/vite-plugin-vue
     Vue(),
-
-    // https://github.com/hannoeru/vite-plugin-pages
-    Pages(),
 
     // https://github.com/elonehoo/unplugin-auto-import-api
     AutoImport({
@@ -39,6 +39,11 @@ export default defineConfig({
         '@vueuse/core',
         'vitest',
         unheadVueComposablesImports,
+        VueRouterAutoImports,
+        {
+          // add any other imports you were relying on
+          'vue-router/auto': ['useLink'],
+        },
       ],
       dts: true,
       dirs: [

@@ -1,4 +1,4 @@
-<script setup lang="ts" name="TheInput">
+<script setup lang="ts">
 import type { Input } from '~components/input/prop'
 
 const { modelValue } = defineProps<Input>()

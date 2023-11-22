@@ -1,4 +1,4 @@
-<script setup lang="ts" name="TheFooter">
+<script setup lang="ts">
 const router = useRouter()
 </script>
 
