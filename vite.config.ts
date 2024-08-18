@@ -15,9 +15,12 @@ import Classify from 'vite-plugin-classify'
 import TerminalLog from 'vite-plugin-terminal-log'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { unheadVueComposablesImports } from '@unhead/vue'
+import DevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
   plugins: [
+    // https://github.com/vuejs/devtools-next
+    DevTools(),
     // https://github.com/vite-inspector/vite-inspector
     Inspector({
       framework: 'vue',

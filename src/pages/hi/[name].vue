@@ -1,7 +1,11 @@
 <script setup lang="ts">
-defineProps<{ name: string }>()
-
 const router = useRouter()
+
+const route = useRoute()
+
+const name = computed(() => {
+  return route.params.name
+})
 </script>
 
 <template>

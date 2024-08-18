@@ -28,7 +28,8 @@
         },
         "types": [
             "vite/client",
-            "vitest/globals"
+            "vitest/globals",
+            "unplugin-vue-router/client"
         ],
         "resolveJsonModule": true,
         "esModuleInterop": true,
