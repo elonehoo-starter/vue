@@ -6,14 +6,14 @@ Starter template for Vue
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/elonehoo/starter-vue/generate).
+[Create a repo from this template on GitHub](https://github.com/elonehoo-starter/vue/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-sudo npx degit elonehoo/starter-vue my-vue-app
+sudo npx degit elonehoo-starter/vue my-vue-app
 cd my-vue-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```

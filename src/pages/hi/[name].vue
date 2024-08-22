@@ -18,7 +18,7 @@ const name = computed(() => {
       <em>Dynamic route!</em>
     </p>
 
-    <TheCounter :initial="4" />
+    <Counter :initial="4" />
 
     <div>
       <button

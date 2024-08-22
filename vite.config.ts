@@ -42,10 +42,6 @@ export default defineConfig({
         'vitest',
         unheadVueComposablesImports,
         VueRouterAutoImports,
-        {
-          // add any other imports you were relying on
-          'vue-router/auto': ['useLink'],
-        },
       ],
       dts: true,
       dirs: [
